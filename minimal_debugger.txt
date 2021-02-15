@@ -1,0 +1,11 @@
+# Create a debugging log (put this, say, in the end of LocalSettings.php):
+
+# PHP:
+error_reporting( -1 );
+ini_set( 'display_errors', 1 );
+
+# SQL:
+$wgDebugDumpSql = true;
+
+# Creating a log file:
+$wgDebugLogFile = "./myLog.txt";
